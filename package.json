@@ -1,0 +1,26 @@
+{
+  "name": "cycle-playground",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Sirvess/cycle-playground.git",
+  "author": "Sirvess",
+  "license": "MIT",
+  "scripts": {
+    "bundle": "rollup --c ",
+    "dev": "rollup --c --watch"
+  },
+  "dependencies": {
+    "@cycle/dom": "^22.8.0",
+    "@cycle/run": "^5.5.0",
+    "tslib": "^2.0.3",
+    "typescript": "^4.0.3"
+  },
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^6.0.0",
+    "prettier": "^2.1.2",
+    "rollup": "^2.32.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-serve": "^1.0.4"
+  }
+}
