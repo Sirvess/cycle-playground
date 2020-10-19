@@ -9,4 +9,4 @@ const main = (sources) => {
   return sinks;
 };
 
-run(main, { DOM: makeDOMDriver("#app") });
+run(main, { DOM: makeDOMDriver("body") });

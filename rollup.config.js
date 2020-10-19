@@ -2,6 +2,8 @@ import resolve from 'rollup-plugin-node-resolve';
 import commonjs from 'rollup-plugin-commonjs';
 import serve from "rollup-plugin-serve";
 import typescript from "@rollup/plugin-typescript";
+import html from "@rollup/plugin-html";
+import livereload from "rollup-plugin-livereload";
 
 export default {
     input: "./src/index.ts",
@@ -12,6 +14,8 @@ export default {
         resolve(),
         commonjs(),
         typescript(),
-        serve('dist')
+        html(),
+        serve('dist'),
+        livereload()
     ]
 };
