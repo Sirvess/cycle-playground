@@ -1,8 +1,8 @@
-import resolve from 'rollup-plugin-node-resolve';
-import commonjs from 'rollup-plugin-commonjs';
-import serve from "rollup-plugin-serve";
+import resolve from '@rollup/plugin-node-resolve';
+import commonjs from '@rollup/plugin-commonjs';
 import typescript from "@rollup/plugin-typescript";
 import html from "@rollup/plugin-html";
+import serve from "rollup-plugin-serve";
 import livereload from "rollup-plugin-livereload";
 
 export default {
@@ -12,7 +12,9 @@ export default {
     },
     plugins: [
         resolve(),
-        commonjs(),
+        commonjs({
+            transformMixedEsModules: true
+        }),
         typescript(),
         html(),
         serve('dist'),
