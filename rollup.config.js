@@ -17,7 +17,5 @@ export default {
         }),
         typescript(),
         html(),
-        serve('dist'),
-        livereload()
     ]
 };
