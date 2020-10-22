@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "bundle": "rollup --c",
-    "dev": "rollup --c rollup.dev.config.js --watch"
+    "dev": "rollup --c rollup.config.dev.js --watch"
   },
   "dependencies": {
     "@cycle/dom": "^22.8.0",
